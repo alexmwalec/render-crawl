@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const URLInput = ({ onAnalyze, loading }) => {
   const [url, setUrl] = useState('');
-  const [options, setOptions] = useState({
+  const [options] = useState({
     waitTime: 5000,
     timeout: 30000,
     fullPageScreenshot: true

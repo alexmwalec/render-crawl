@@ -20,23 +20,18 @@ import {
   Filter,
   Calendar,
   Eye,
-  Edit,
-  Trash2,
-  MoreVertical,
   Home,
   CreditCard,
-  MessageSquare,
   HelpCircle,
   LogOut
 } from 'lucide-react';
 
 const AdminDashboard = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
   const [activeTab, setActiveTab] = useState('overview');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const [dashboardStats, setDashboardStats] = useState({
+  const [dashboardStats] = useState({
     totalUsers: 1245,
     activeSubscriptions: 892,
     monthlyRevenue: 24850,
@@ -45,7 +40,7 @@ const AdminDashboard = () => {
     growthRate: 12.5
   });
 
-  const [recentUsers, setRecentUsers] = useState([
+  const [recentUsers] = useState([
     { id: 1, name: 'Sarah Johnson', email: 'sarah@agency.com', plan: 'Professional', status: 'active', lastLogin: '2 hours ago' },
     { id: 2, name: 'Mike Chen', email: 'mike@techcorp.com', plan: 'Enterprise', status: 'active', lastLogin: '5 hours ago' },
     { id: 3, name: 'Alex Rivera', email: 'alex@devshop.com', plan: 'Starter', status: 'active', lastLogin: '1 day ago' },
@@ -53,7 +48,7 @@ const AdminDashboard = () => {
     { id: 5, name: 'David Park', email: 'david@seoagency.com', plan: 'Starter', status: 'active', lastLogin: '3 days ago' },
   ]);
 
-  const [recentAnalyses, setRecentAnalyses] = useState([
+  const [recentAnalyses] = useState([
     { id: 1, url: 'https://shopify-store.com', status: 'completed', issues: 3, date: '2024-01-15', user: 'Sarah Johnson' },
     { id: 2, url: 'https://react-app.com', status: 'processing', issues: 0, date: '2024-01-15', user: 'Mike Chen' },
     { id: 3, url: 'https://vue-dashboard.com', status: 'completed', issues: 12, date: '2024-01-14', user: 'Alex Rivera' },

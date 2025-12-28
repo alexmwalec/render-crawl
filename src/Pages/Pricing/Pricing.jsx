@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Pricing = () => {
   const [billingCycle, setBillingCycle] = useState('monthly');
-  const [hoveredPlan, setHoveredPlan] = useState(null);
+  const [setHoveredPlan] = useState(null);
 
   // Helper to calculate price
   const getPrice = (monthlyPrice) => {

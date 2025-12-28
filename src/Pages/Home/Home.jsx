@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  BarChart2, 
+import {  
   CheckCircle2, 
   ChevronRight, 
   Globe, 
-  Zap, 
-  Shield, 
+  Zap,  
   Search,
-  Code,
   Layout,
-  Menu,
-  X,
   Play,
   MonitorPlay,
   FileText
@@ -190,7 +185,7 @@ const Home = () => {
                       <div className="text-gray-400">&lt;!-- What Googlebot Sees --&gt;</div>
                       <div className="text-purple-400">const <span className="text-blue-400">app</span> = <span className="text-yellow-400">await</span> render();</div>
                       <div className="text-purple-400">if <span className="text-white">(</span>!content<span className="text-white">)</span> <span className="text-red-400">return 404;</span></div>
-                      <div className="text-green-400 pl-4">// RenderCrawl detects this hidden content</div>
+            
                       <div className="flex items-center gap-2 bg-blue-900/30 p-2 rounded border border-blue-500/30 mt-4">
                          <CheckCircle2 className="w-4 h-4 text-green-400" />
                          <span className="text-blue-200">Client-Side Rendering Simulated</span>
