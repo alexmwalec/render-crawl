@@ -195,6 +195,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        </div>
       </section>
 
       <section id="features" className="py-24 bg-white">
