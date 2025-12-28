@@ -190,7 +190,7 @@ const Home = () => {
                          <CheckCircle2 className="w-4 h-4 text-green-400" />
                          <span className="text-blue-200">Client-Side Rendering Simulated</span>
                       </div>
-                    </div>
+                    </div><div className="text-green-400 pl-4">// RenderCrawl detects this hidden content</div>
                  </div>
                </div>
             </div>
